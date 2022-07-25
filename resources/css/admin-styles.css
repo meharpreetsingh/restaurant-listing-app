@@ -1,0 +1,262 @@
+/* ----- Colors ----- 
+Light: #00b8ff
+Medium: #009bd6
+Dark: #00719c
+Darker: #00415a
+Darkest: #001f2b
+*/
+
+/*
+----- Brown Color Scheme -----
+Brown: rgb(102, 51, 0)    #663300
+Gold: rgb(204, 153, 0)    #CC9900
+Green: rgb(51, 51, 0)    #333300
+Orange: rgb(204, 102, 0)    #CC6600
+*/
+
+/* --------------------------------------- */
+/* -------- Universal Properties -------- */
+/* --------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	background: #fff;
+	color: rgb(102, 51, 0);
+	font-family: 'Roboto', 'Arial', san-serif;
+	font-weight: 300;
+	font-size: 62.5%;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+body {
+	line-height: 1.75;
+	font-weight: 400;
+	background-color: #eee;
+}
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after {
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+/* --------------------------------------- */
+/* -------- Grid Edit -------- */
+/* --------------------------------------- */
+
+.row {
+	display: block;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/* --------------------------------------- */
+/* -------- Elements -------- */
+/* --------------------------------------- */
+
+/* ----- Links -----*/
+a:link,
+a:visited {
+	text-decoration: none;
+	color: rgb(102, 51, 0);
+}
+
+/* ----- Headings ----- */
+h1 {
+	margin: 0;
+	margin-bottom: 2rem;
+	color: rgb(102, 51, 0);
+	text-transform: uppercase;
+	font-size: 4.8rem;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+}
+h2 {
+	font-size: 3rem;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+/* ----- Buttons ----- */
+
+.btn-logout:link,
+.btn-logout:visited{
+    display: inline-block;
+	padding: 1rem 3rem;
+	text-decoration: none;
+	font-weight: 300;
+	border-radius: 1rem;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+	text-transform: uppercase;
+    background-color: rgb(204, 153, 0);
+	border: 1px solid rgb(204, 153, 0);
+	color: #fff;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+.btn-logout:hover{
+    background-color: rgb(163, 122, 0);
+	border: 1px solid rgb(163, 122, 0);
+}
+
+
+input[type='submit'] {
+	display: inline-block;
+	padding: 1rem 3rem;
+	text-decoration: none;
+	font-weight: 300;
+	border-radius: 1rem;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+	text-transform: uppercase;
+}
+
+input[type='submit'] {
+	background-color: rgb(204, 153, 0);
+	border: 1px solid rgb(204, 153, 0);
+	color: #fff;
+}
+
+input[type='submit']:hover {
+	background-color: rgb(163, 122, 0);
+	border: 1px solid rgb(163, 122, 0);
+}
+input[type='submit']:active,
+input[type='submit']:focus{
+	outline: none;
+}
+/* --------------------------------------- */
+/* -------- Query Result -------- */
+/* --------------------------------------- */
+.form-result{
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* --------------------------------------- */
+/* -------- Section New Restaurant -------- */
+/* --------------------------------------- */
+section {
+	padding: 5rem;
+}
+.create-form{
+	text-align: center;
+}
+.form-group{
+	display: block;
+	margin-bottom:1rem;
+}
+.form-label{
+	display: inline-block;
+	font-size: 1.4rem;
+	font-weight: 600;
+	text-align: left;
+	width: 20%;
+}
+.form-input{
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+}
+.form-input input:not([type='submit']){
+	width: 100%;
+	padding: 1rem 2rem;
+	border-radius: .5rem;
+	border: none;
+}
+.form-input input:not([type='submit']):active,
+.form-input input:not([type='submit']):focus{
+	outline: none;
+}
+
+/* --------------------------------------- */
+/* -------- Top Bar -------- */
+/* --------------------------------------- */
+
+.search-bar-container {
+	text-align: center;
+	padding: 1.5rem 2rem;
+	background-position: top;
+	background-size: cover;
+	background-image: linear-gradient(to bottom right, rgba(204, 102, 0, 0.9), rgba(102, 51, 0, 0.9)), url(img/pattern.png);
+	border-bottom: 2px solid #00415a;
+}
+.logo-text {
+	display: inline;
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+}
+
+/* --------------------------------------- */
+/* -------- Section Delete Restaurant -------- */
+/* --------------------------------------- */
+select{
+	width: 100%;
+	padding: 1rem 2rem;
+	border-radius: .5rem;
+	border: none;
+}
+select:active,
+select:focus{
+	outline: none;
+}
+
+/* --------------------------------------- */
+/* -------- Section Update Restaurant -------- */
+/* --------------------------------------- */
+
+
+/* --------------------------------------- */
+/* -------- footer -------- */
+/* --------------------------------------- */
+footer {
+	padding: 1rem 0;
+	background-color: #333;
+	color: #eee;
+	font-size: 1.2rem;
+}
+.footer-list {
+	list-style-type: none;
+	text-align: center;
+}
+.footer-list__item {
+	display: inline-block;
+}
+.footer-list__link:link,
+.footer-list__link:visited {
+	display: inherit;
+	color: #eee;
+	padding: 1rem 2rem;
+	cursor: default;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+}
+.footer-list__link:active,
+.footer-list__link:hover {
+	color: #ccc;
+}

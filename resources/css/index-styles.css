@@ -1,0 +1,265 @@
+/*
+----- Brown Color Scheme -----
+Brown: rgb(102, 51, 0)    #663300
+Gold: rgb(204, 153, 0)    #CC9900
+Green: rgb(51, 51, 0)    #333300
+Orange: rgb(204, 102, 0)    #CC6600
+*/
+
+/* --------------------------------------- */
+/* -------- Universal Properties -------- */
+/* --------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	background: #fff;
+	color: rgb(102, 51, 0);
+	font-family: 'Roboto', 'Arial', san-serif;
+	font-weight: 300;
+	font-size: 62.5%;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+body {
+	line-height: 1.75;
+	font-weight: 400;
+}
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after {
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+/* --------------------------------------- */
+/* -------- Grid Edit -------- */
+/* --------------------------------------- */
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/* --------------------------------------- */
+/* -------- Elements -------- */
+/* --------------------------------------- */
+
+/* ----- Links -----*/
+a:link,
+a:visited {
+	text-decoration: none;
+	color: rgb(102, 51, 0);
+}
+/* ----- Headings ----- */
+h1 {
+	margin: 0;
+	margin-bottom: 2rem;
+	color: rgb(102, 51, 0);
+	text-transform: uppercase;
+	font-size: 4.8rem;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+}
+h2 {
+	font-size: 3rem;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+/* ----- Buttons ----- */
+input[type='submit'] {
+	display: inline-block;
+	padding: 1rem 3rem;
+	text-decoration: none;
+	font-weight: 300;
+	border-radius: 1rem;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+	text-transform: uppercase;
+}
+input[type='submit'] {
+	background-color: rgb(204, 153, 0) ;
+	border: 1px solid rgb(204, 153, 0) ;
+	color: #fff;
+}
+input[type='submit']:hover {
+	background-color: rgb(163, 122, 0);
+	border: 1px solid rgb(163, 122, 0);
+}
+
+/* ----- Form - Input ----- */
+
+.search-text {
+	padding: 1rem 2rem;
+	width: 50%;
+	border: 1px solid transparent;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+	margin-right: 0.5rem;
+	color: rgb(102, 51, 0);
+	font-family: inherit;
+	font-weight: bold;
+}
+.search-text:active,
+.search-text:focus {
+	outline: none;
+	border-bottom: rgb(102, 51, 0);
+}
+
+/* ----- Paragraphs ----- */
+.long-copy {
+	font-size: 1.4rem;
+	line-height: 145%;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: center;
+}
+/* --------------------------------------- */
+/* -------- header -------- */
+/* --------------------------------------- */
+
+.header-container {
+	position: relative;
+	height: 40rem;
+	background-image: linear-gradient(to bottom right, rgba(204, 102, 0, 0.9), rgba(102, 51, 0, 0.9)), url(img/pattern.png);
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.search-container {
+	position: absolute;
+	width: 33rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+.logo-container {
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+.logo-text {
+	font-size: 4.8rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #eee;
+}
+.under-logo {
+	display: block;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #eee;
+	margin-top: -2rem;
+}
+
+.form-container {
+	text-align: center;
+}
+
+/* --------------------------------------- */
+/* -------- cities -------- */
+/* --------------------------------------- */
+
+.section-cities {
+	padding: 9rem 0;
+}
+.cities-card {
+	background-size: cover;
+	background-position: left;
+	padding: 1rem;
+	height: 20rem;
+	position: relative;
+	cursor: pointer;
+}
+.cities-card__bathinda {
+	background-image: linear-gradient(to bottom right, rgba(204, 102, 0, 0.3), rgba(102, 51, 0, 0.3)), url(img/bathinda.png);
+}
+.cities-card__sangrur {
+	background-image: linear-gradient(to bottom right, rgba(204, 102, 0, 0.3), rgba(102, 51, 0, 0.3)), url(img/sangrur.jpg);
+}
+.cities-card__longowal {
+	background-image: linear-gradient(to bottom right, rgba(204, 102, 0, 0.3), rgba(102, 51, 0, 0.3)), url(img/longowal.jpg);
+}
+.cities-card__dhuri {
+	background-image: linear-gradient(to bottom right, rgba(204, 102, 0, 0.3), rgba(102, 51, 0, 0.3)), url(img/dhuri.jpg);
+}
+.cities-card__text {
+	position: absolute;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #fff;
+}
+.cities-card__text a:link,
+.cities-card__text a:visited {
+	color: #fff;
+}
+
+/* --------------------------------------- */
+/* -------- whatfor -------- */
+/* --------------------------------------- */
+.section-whatfor {
+	background-image: linear-gradient(to bottom right, rgba(204, 102, 0, 0.9), rgba(102, 51, 0, 0.9));
+	padding: 5rem 0;
+}
+.section-whatfor h2,
+.section-whatfor p {
+	color: white;
+}
+.section-whatfor col {
+	border-right: 1px solid rgba(0, 112, 156);
+}
+
+/* --------------------------------------- */
+/* -------- footer -------- */
+/* --------------------------------------- */
+footer {
+	padding: 1rem 0;
+	background-color: #333;
+	color: #eee;
+	font-size: 1.2rem;
+}
+.footer-list {
+	list-style-type: none;
+	text-align: center;
+}
+.footer-list__item {
+	display: inline-block;
+}
+.footer-list__link:link,
+.footer-list__link:visited {
+	display: inherit;
+	color: #eee;
+	padding: 1rem 2rem;
+	cursor: default;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+}
+.footer-list__link:active,
+.footer-list__link:hover {
+	color: #ccc;
+}
